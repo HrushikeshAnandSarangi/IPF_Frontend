@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
     sdg: "SDGs 16: Peace Justice & Strong Institution",
     description:
       "Interfaith Youth Leadership Programmes are designed to educate and empower young individuals by fostering understanding and respect among diverse religious communities. The core aim of this initiative is to nurture a generation of youth who are not only aware of the different faiths that shape our society—such as Hinduism, Islam, Christianity, Sikhism, Buddhism, Jainism, and others—but are also capable of leading conversations that challenge prejudice and promote unity. Through interactive workshops, school visits, and experiential learning sessions, the programme introduces participants to the beliefs, practices, and values of various religions. This engagement helps break down stereotypes and builds empathy, encouraging youth to move beyond narrow identities and see the world through a lens of inclusion and mutual respect. The leadership aspect of the programme equips participants with the skills to become ambassadors of peace and understanding in their communities. They learn to communicate effectively, lead interfaith discussions, and inspire others to embrace diversity. By creating safe spaces for dialogue and shared learning, the programme lays the foundation for a more cohesive and compassionate society. In a world often divided by misunderstanding and fear, this initiative offers hope—cultivating leaders who can bridge divides and help others excel through cooperation and shared humanity.",
-    image: "/placeholder.svg?height=400&width=600&text=Youth Leadership",
+    image: "/interfaithyouth/P_2.jpeg",
     hasImage: true,
     category: "interfaith",
   },
@@ -25,7 +25,7 @@ export const projectsData: Project[] = [
     sdg: "SDGs 16: Peace Justice & Strong Institution",
     description:
       "Twinning Season – Jewish-Muslim Interfaith Dialogue is a unique initiative aimed at fostering harmony, mutual respect, and collaboration between Jewish and Muslim communities. Through open dialogue, shared experiences, and cultural exchange, the project encourages participants to explore common values, address misconceptions, and build lasting relationships rooted in trust. The programme includes joint workshops, storytelling sessions, community visits, and discussions that highlight shared histories and ethical teachings in both faiths. By creating spaces for honest and respectful conversations, the initiative helps break down stereotypes and combat rising intolerance. Twinning Season also focuses on empowering youth and community leaders to take forward the spirit of coexistence. It promotes empathy, critical thinking, and a sense of shared responsibility in addressing global and local challenges. In times of increasing polarization, this project stands as a hopeful example of how dialogue can heal divisions and lay the foundation for long-term Jewish-Muslim solidarity.",
-    image: "/placeholder.svg?height=400&width=600&text=Jewish Muslim Dialogue",
+    image: "/twinning/P_2.jpeg",
     hasImage: true,
     category: "interfaith",
   },
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     sdg: "SDGs 16: Peace Justice & Strong Institution",
     description:
       "Building Bridges, Fostering Harmony is a flagship initiative of the Indian Pluralism Foundation that focuses on addressing the growing challenges of religious intolerance. The project brings together interfaith leaders, scholars, and community representatives to engage in meaningful dialogue and collaborative problem-solving. Through structured conversations, community forums, and joint initiatives, it works to break down barriers, challenge misconceptions, and promote mutual respect among diverse religious groups. The goal is to create sustainable pathways to peace and understanding by nurturing trust, empathy, and cooperation. This initiative plays a vital role in strengthening social harmony and reinforcing India's deep-rooted values of unity in diversity.",
-    image: "/placeholder.svg?height=400&width=600&text=Building Bridges",
+    image: "/buildingbridges/P_2.jpeg",
     hasImage: true,
     category: "interfaith",
   },
@@ -62,7 +62,7 @@ export const projectsData: Project[] = [
     title: "Documentary on Raja Ram Mohan Roy",
     description:
       "The Indian Pluralism Foundation along with Heather House produced and directed a short film on the life and legacy of Raja Ram Mohan Roy, one of India's earliest social reformers and a pioneer of interfaith harmony. This documentary highlights his visionary role in promoting religious tolerance, rational thinking, and social justice. Through compelling storytelling and historical insights, the film showcases how Roy brought together values from Hinduism, Islam, Christianity, and other traditions to advocate for a more inclusive and progressive society.",
-    image: "/placeholder.svg?height=400&width=600&text=Raja Ram Mohan Roy Documentary",
+    image: "/yoga/RajaRamMohan.png",
     hasImage: true,
     category: "education",
   },
@@ -80,7 +80,7 @@ export const projectsData: Project[] = [
     title: "Interfaith Yoga",
     description:
       "Interfaith Yoga Sessions is a project by the Indian Pluralism Foundation in collaboration with StudyGita.in, designed to promote holistic well-being and interfaith harmony through the integrated practice of yoga. The core concept of the project is 'Yoga on and off the mat,' meaning it goes beyond physical postures to include mental and spiritual growth. Through these sessions, participants from different religious and cultural backgrounds come together to engage in yoga practices combined with insightful discussions on the teachings of the Bhagavad Gita. The project explores key concepts such as karma yoga (selfless action), bhakti yoga (devotion), and jnana yoga (wisdom), encouraging reflection on how these universal values can be applied in everyday life, regardless of faith. By blending physical wellness with interfaith dialogue and ancient wisdom, the Interfaith Yoga Sessions project aims to build a space for shared learning, inner peace, and cross-cultural connection, contributing to a more inclusive and spiritually aware society.",
-    image: "/placeholder.svg?height=400&width=600&text=Interfaith Yoga",
+    image: "/yoga/P_2.jpeg",
     hasImage: true,
     category: "health",
   },

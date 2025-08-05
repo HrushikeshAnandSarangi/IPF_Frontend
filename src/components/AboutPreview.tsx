@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Eye, Target, Users } from "lucide-react"
 
@@ -17,7 +16,7 @@ export default function AboutPreview({ className = "" }: AboutPreviewProps) {
       icon: <Eye className="w-8 h-8" />,
       description:
         "Building bridges across India's rich tapestry of faiths, fostering mutual respect and celebrating our unique identity in diversity.",
-      image: "/placeholder.svg?height=300&width=400&text=Our Vision",
+      image: "/buildingbridges/P_2.jpeg",
       gradient: "from-blue-500 to-purple-500",
       bgGradient: "from-blue-50 to-purple-50",
     },
@@ -27,7 +26,7 @@ export default function AboutPreview({ className = "" }: AboutPreviewProps) {
       icon: <Target className="w-8 h-8" />,
       description:
         "Engaging youth in interfaith dialogue and activities while fostering UN Sustainable Development Goals through peacebuilding action.",
-      image: "/placeholder.svg?height=300&width=400&text=Our Purpose",
+      image: "/twinning/P_1.jpeg",
       gradient: "from-orange-500 to-red-500",
       bgGradient: "from-orange-50 to-red-50",
     },
@@ -37,7 +36,7 @@ export default function AboutPreview({ className = "" }: AboutPreviewProps) {
       icon: <Users className="w-8 h-8" />,
       description:
         "Collaborating with diverse organizations, educational institutions, and community groups to create meaningful interfaith impact.",
-      image: "/placeholder.svg?height=300&width=400&text=Our Partners",
+      image: "/buildingbridges/P_1.jpg",
       gradient: "from-green-500 to-teal-500",
       bgGradient: "from-green-50 to-teal-50",
     },
@@ -101,7 +100,7 @@ export default function AboutPreview({ className = "" }: AboutPreviewProps) {
 
                   {/* Learn More Link */}
                   <div className="flex items-center text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-                    <span className="text-sm font-medium mr-2">Learn More</span>
+                    <span className="text-sm font-medium mr-2"><a href="/about">Learn More</a></span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
@@ -126,29 +125,6 @@ export default function AboutPreview({ className = "" }: AboutPreviewProps) {
             <div className="group">
               <div className="text-4xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">25+</div>
               <div className="text-lg opacity-90">Partner Organizations</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-12 border border-gray-100 shadow-lg">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Ready to Learn More?</h3>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Explore our complete story, detailed mission, and comprehensive approach to building interfaith harmony
-              across communities.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-orange-500 to-green-500 hover:from-orange-600 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Read Full About Page
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-orange-200 text-orange-600 hover:bg-orange-50 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 bg-transparent"
-              >
-                View Our Projects
-              </Button>
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 import React from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Users, Heart, BookOpen, Globe } from "lucide-react"
@@ -17,46 +16,36 @@ export default function ProjectsPreview({ className = "" }: ProjectsPreviewProps
       id: "1",
       title: "Interfaith Youth Leadership",
       description: "Empowering young leaders to foster understanding across diverse religious communities",
-      image: "/placeholder.svg?height=400&width=600&text=Youth Leadership",
+      image: "/interfaithyouth/P_1.jpeg",
       icon: Users,
-      category: "Leadership",
-      gradient: "from-blue-500 to-purple-500",
+      category: "Interfaith",
+      gradient: "from-orange-500 to-yellow-500",
       size: "large", // Takes up 2x2 grid space
     },
     {
       id: "2",
       title: "Building Bridges Program",
       description: "Creating sustainable pathways to peace through interfaith dialogue",
-      image: "/placeholder.svg?height=300&width=400&text=Building Bridges",
+      image: "/buildingbridges/P_1.jpg",
       icon: Heart,
-      category: "Dialogue",
+      category: "Community",
       gradient: "from-orange-500 to-red-500",
       size: "medium", // Takes up 1x2 grid space
     },
     {
       id: "3",
-      title: "Youth Essay Contest",
-      description: "Inspiring creative expression on interfaith harmony",
-      image: "/placeholder.svg?height=300&width=400&text=Essay Contest",
+      title: "Yoga",
+      description: "Inspiring inner peace through the practice of yoga",
+      image: "/yoga/P_2.jpeg",
       icon: BookOpen,
-      category: "Education",
+      category: "Health",
       gradient: "from-green-500 to-teal-500",
-      size: "small", // Takes up 1x1 grid space
-    },
-    {
-      id: "4",
-      title: "Community Service",
-      description: "Uniting faiths through charitable initiatives",
-      image: "/placeholder.svg?height=300&width=400&text=Community Service",
-      icon: Globe,
-      category: "Service",
-      gradient: "from-purple-500 to-pink-500",
       size: "small", // Takes up 1x1 grid space
     },
   ]
 
   return (
-    <section className={`py-20 bg-gradient-to-b from-gray-50 to-white ${className}`}>
+    <section className={`py-20 bg-white ${className}`}>
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
@@ -103,7 +92,7 @@ export default function ProjectsPreview({ className = "" }: ProjectsPreviewProps
                   <p className="text-white/90 text-lg mb-6 leading-relaxed">{featuredProjects[0].description}</p>
 
                   <div className="flex items-center text-white group-hover:text-orange-200 transition-colors duration-300">
-                    <span className="font-medium mr-2">Learn More</span>
+                    <span className="font-medium mr-2"><a href="/projects">Learn More</a></span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                   </div>
                 </div>
@@ -137,7 +126,7 @@ export default function ProjectsPreview({ className = "" }: ProjectsPreviewProps
                   <p className="text-gray-600 text-sm mb-4 leading-relaxed">{featuredProjects[1].description}</p>
 
                   <div className="flex items-center text-gray-500 group-hover:text-orange-600 transition-colors duration-300">
-                    <span className="text-sm font-medium mr-2">Explore</span>
+                    <span className="text-sm font-medium mr-2"><a href="/projects">Explore</a></span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
@@ -170,61 +159,13 @@ export default function ProjectsPreview({ className = "" }: ProjectsPreviewProps
                   <p className="text-white/90 text-sm mb-3">{featuredProjects[2].description}</p>
 
                   <div className="flex items-center text-white/80 group-hover:text-green-200 transition-colors duration-300">
-                    <span className="text-sm font-medium mr-1">View</span>
+                    <span className="text-sm font-medium mr-1"><a href="/projects">View</a></span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
-
-          {/* Small Card - Community Service (spans 1x1) */}
-          <Card className="group lg:col-span-2 hover:shadow-xl transition-all duration-500 border-0 overflow-hidden bg-white">
-            <CardContent className="p-0">
-              <div className="relative h-full min-h-[240px]">
-                <Image
-                  src={featuredProjects[3].image || "/placeholder.svg"}
-                  alt={featuredProjects[3].title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-
-                <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                  <Badge className={`bg-gradient-to-r ${featuredProjects[3].gradient} text-white border-0 mb-2 w-fit`}>
-                    {React.createElement(featuredProjects[3].icon, { className: "w-4 h-4 mr-1" })}
-                    {featuredProjects[3].category}
-                  </Badge>
-
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-200 transition-colors duration-300">
-                    {featuredProjects[3].title}
-                  </h3>
-
-                  <p className="text-white/90 text-sm mb-3">{featuredProjects[3].description}</p>
-
-                  <div className="flex items-center text-white/80 group-hover:text-purple-200 transition-colors duration-300">
-                    <span className="text-sm font-medium mr-1">Discover</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-100">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Explore All Our Projects</h3>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Discover the full range of our interfaith initiatives and see how we're building bridges between
-              communities across India.
-            </p>
-            <Button className="bg-gradient-to-r from-orange-500 to-green-500 hover:from-orange-600 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              View All Projects
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </div>
         </div>
       </div>
     </section>

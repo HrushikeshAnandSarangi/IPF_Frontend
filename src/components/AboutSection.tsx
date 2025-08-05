@@ -40,18 +40,26 @@ export default function AboutSection({ className = "" }: AboutSectionProps) {
   ]
 
   const partnersData = [
-    "United Nations",
-    "StudyGita.in",
-    "Heather House",
-    "Educational Institutions",
-    "Religious Organizations",
-    "Community Leaders",
-    "Government Bodies",
-    "Youth Organizations",
-    "Cultural Centers",
-    "Peace Foundations",
-    "Interfaith Councils",
-    "Social Welfare Groups",
+    "URI- United Religions Initiative",
+    "FFEU- Foundation For Ethnic Understanding ",
+    "Combat Anti Semitism Movement ",
+    "StudyGita",
+    "Rubaroo ",
+    "Matri Mandir, Kolkata ",
+    "CNI Wesleyan Church",
+    "Beth el Synagogue ",
+    "Masjid e Abu Bakr (R.A)",
+    "Baha’i House, Kolkata ",
+    "Tollygunje Buddhist Monastery ",
+    "Sant Kuthiya Gurudwara",
+    "British Deputy High Commission, Kolkata ",
+    "Jewish Girls’ School ",
+    "Khalsa High School ",
+    "Bishop’s College ",
+    "Alliance De Français",
+    "Russian Cultural Center, Kolkata ",
+    "International Justice Mission ",
+    "LIPS- Azhar"
   ]
 
   const aboutContent = {
