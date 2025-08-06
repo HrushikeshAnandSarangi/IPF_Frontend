@@ -82,6 +82,7 @@ export default function ProjectsSection({ className = "" }: ProjectsSectionProps
                           </Badge>
                         )}
 
+
                         <h3 className="text-3xl font-bold text-gray-900 leading-tight group-hover:text-orange-600 transition-colors duration-300">
                           {project.title}
                         </h3>
@@ -106,6 +107,12 @@ export default function ProjectsSection({ className = "" }: ProjectsSectionProps
                             )}
                           </Button>
                         )}
+                          {project.link && (
+                            <a href={project.link}>
+                            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 text-sm font-medium rounded-full mb-4">
+                              Check it out!
+                            </Badge></a>
+                          )}
                       </div>
                     </div>
                   </div>
@@ -120,6 +127,7 @@ export default function ProjectsSection({ className = "" }: ProjectsSectionProps
                               {project.sdg}
                             </Badge>
                           )}
+
 
                           <h3 className="text-3xl font-bold text-gray-900 leading-tight mb-6 group-hover:text-green-600 transition-colors duration-300">
                             {project.title}
@@ -136,6 +144,7 @@ export default function ProjectsSection({ className = "" }: ProjectsSectionProps
                         </p>
                       </div>
 
+
                       {project.description.length > 200 && (
                         <Button
                           onClick={() => toggleExpanded(project.id)}
@@ -150,7 +159,15 @@ export default function ProjectsSection({ className = "" }: ProjectsSectionProps
                           )}
                         </Button>
                       )}
+                          {project.link && (
+                            <a href={project.link}>
+                            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 text-sm font-medium rounded-full mb-4">
+                              Check it out!
+                            </Badge></a>
+                          )}
+
                     </div>
+
                   </div>
                 )}
               </div>

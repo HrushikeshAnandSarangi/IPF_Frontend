@@ -6,6 +6,7 @@ export interface Project {
   image?: string
   hasImage: boolean
   category: "interfaith" | "community" | "health" | "education" | "environment"
+  link?: string
 }
 
 export const projectsData: Project[] = [
@@ -65,6 +66,7 @@ export const projectsData: Project[] = [
     image: "/yoga/RajaRamMohan.png",
     hasImage: true,
     category: "education",
+    link:"https://drive.google.com/file/d/14ySmvznKuHQNrkkMdgfDP3tDbMAMBo--/view?usp=drive_link"
   },
   {
     id: "7",
