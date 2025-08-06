@@ -5,6 +5,12 @@ export interface CoreTeamMember {
   intro: string
   image: string
 }
+export interface InternationalMember {
+  id: string
+  name: string
+  intro: string
+  image: string
+}
 
 export interface TeamMember {
   id: string
@@ -88,4 +94,30 @@ export const advisoryBoard: TeamMember[] = [
   {id:"9",name:"Rev. Suresh Mohanty "},
   {id:"10",name:"Dr. N. Saha "},
   {id:"11",name:"Zeba Ahmed"},
+]
+export const internationalBoard:InternationalMember[]=[
+  {
+    id:"1",
+    name:"Dima Mahjoub",
+    intro:"Dima Mahjoub is a peacebuilding and migration practitioner with over 15 years of experience across Syria, Iraq, Lebanon, and Germany. She works at the intersection of displacement, sustainable return, and social cohesion, with a strong focus on dialogue, gender justice, and community-based approaches.She has worked with UNHCR, the ICRC, Caritas, and the German Red Cross, and holds academic degrees in law and peace studies. Dima is the co-founder of NISA (Nigeria, Iraq, Syria, Afghanistan), a diaspora-led platform that fosters nonviolent communication, personal peace practices, and peer learning—enabling communities to support themselves and share local solutions globally to challenge systems of exclusion.",
+    image:"/international/i10l_1.jpg",
+  },
+  {
+    id:"2",
+    name:"Obi Onyeigwe",
+    intro:"Obi Onyeigwe is a Nigerian interfaith peacebuilder and social change advocate working at the intersection of peacebuilding, gender justice, climate action, youth leadership, governance, and human rights. With extensive experience in grassroots and policy-level initiatives, he uses interfaith dialogue, community engagement, and cultural tools to promote healing, trust, and social cohesion across religious and ethnic divides. Through his leadership in World Faith and as founder of YOUPEDA (Youths for Peacebuilding & Development in Africa), Obi mentors young changemakers, leads youth-centered programs, and champions inclusive dialogue on issues such as gender-based violence, substance abuse, private security, and anti-corruption. His work reflects a deep belief in local ownership, collective action, and the transformative power of empathy and accountable leadership in building peaceful communities across Africa. Obi is a co- editor, co-author and coordinator of “Youths in Africa- Agents of Change and writer of diverse interests, topics in Africa and global issues. Born and bred in Nigeria, and graduated from the famous indigenous Nnamdi Azikiwe University- Awka with Bachelor of Arts Degree in Religion and Human Relations.",
+    image:"/international/i10l_2.jpg",
+  },
+  {
+    id:"3",
+    name:"Rev. Vicki Garlock",
+    intro:"Rev. Vicki Garlock, Ph.D. is Founder of World Religions 4 Kids and Education Director for Religion Matters. She is also author of the award-winning kids’ books We All Have Sacred Spaces and ABCs of the World’s Religions. She regularly presents at Social Studies conferences around the country, helping educators gain both confidence and proficiency when teaching about religion in the classroom, and has written for The Interfaith Observer, Multicultural Kid Blogs, and Deseret News.Vicki received her Ph.D. with dual specialties in cognitive development and neuroscience and worked as a full-time Psychology professor for 10+ years before becoming the Nurture Coordinator and Curriculum Specialist at Jubilee! Community. While there, she developed a multiyear, multi-age, multifaith curriculum for kids age 3 through 8th grade and was ordained as their Minister of Education. She lives in Asheville, North Carolina with her husband and enjoys watching and supporting her young adult children as they learn to live into their best selves.",
+    image:"/international/i10l_3.jpg",
+  },
+  {
+    id:"4",
+    name:"Mr. Mohammad Ayatulla Rahaman ",
+    intro:"Mr. Mohammad Ayatulla Rahaman is a founder and National Director of Nepal Unites, a part of Global Unites and running in 14 countries as a youth movement. He has been engaged in the Nepal Red Cross Society (NRCS) from a young age. He became a Lifetime Membership in the age of 16 and inspired with the Red Cross Principles and works then also became Distinguished Membership of NRCS in the age of 19. He has had 16 years’ experience of leadership, as a facilitator and mobilizer. He facilitates as a Master Trainer of Trainers on Youth Peer Education and on the issues of gender, women discrimination, Human Rights, peace, and responsible citizenship. He has good experience in national and international programs with the youth. He likes to work with the youth. He always believes that youth are innovative and have new ideas, concepts, courage, skills, and high energy to bring about needed changes. That is why he says, the Youth Can! He feels free and enjoy during working time with the youths. As to his formal college degree, he has completed the Bachelor degree majoring subject English Literature in the education faculty of Tribhuvan University. He has also completed a Master’s degree in Sociology from the same University. He had worked as a journalist in the national newspaper, online digital media, and television here in Nepal. He likes to work and integrate with people in the community, listen to their voices, and realize his advocacy for them. He wants to write and make their story known to the public. He also writes articles on local and social issues. He likes to travel. Trekking is his best hobby. He always focuses on self-commitment and self-implement. Always have a smile, for a smile brings positive vibes. Share a smile with everyone and make people happy. ",
+    image:"/international/i10l_4.jpg",
+  },
 ]

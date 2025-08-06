@@ -4,15 +4,15 @@ import { useState } from "react"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { coreTeamData, executiveMembers, advisoryBoard } from "./data/TeamData"
-import type { CoreTeamMember, TeamMember } from "./data/TeamData"
+import { coreTeamData, executiveMembers, advisoryBoard,internationalBoard } from "./data/TeamData"
+import type { CoreTeamMember, TeamMember,InternationalMember } from "./data/TeamData"
 
 interface OurTeamSectionProps {
   className?: string
 }
 
 export default function OurTeamSection({ className = "" }: OurTeamSectionProps) {
-  const [activeTab, setActiveTab] = useState<"core" | "executive" | "advisory">("core")
+  const [activeTab, setActiveTab] = useState<"core" | "executive" | "advisory" | "international">("core")
 
   return (
     <section className={`py-16 bg-gradient-to-br from-orange-50 via-white to-green-50 ${className}`}>
@@ -62,6 +62,16 @@ export default function OurTeamSection({ className = "" }: OurTeamSectionProps) 
               >
                 Advisory Board
               </button>
+           <button
+                onClick={() => setActiveTab("international")}
+                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                  activeTab === "advisory"
+                    ? "bg-gradient-to-r from-orange-500 to-green-500 text-white shadow-md"
+                    : "text-gray-600 hover:text-gray-800 hover:bg-gray-50"
+                }`}
+              >
+                International Advisory Board
+              </button>
             </div>
           </div>
         </div>
@@ -95,6 +105,44 @@ export default function OurTeamSection({ className = "" }: OurTeamSectionProps) 
                             <Badge className="bg-gradient-to-r from-orange-500 to-green-500 text-white border-0 hover:from-orange-600 hover:to-green-600">
                               {member.designation}
                             </Badge>
+                          </div>
+                        </div>
+
+                        {/* Content */}
+                        <div className="p-6">
+                          <p className="text-gray-600 leading-relaxed">{member.intro}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {activeTab === "international" && (
+            <div className="animate-in fade-in duration-500">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                {internationalBoard.map((member: InternationalMember) => (
+                  <Card
+                    key={member.id}
+                    className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm overflow-hidden"
+                  >
+                    <CardContent className="p-0">
+                      <div className="relative">
+                        {/* Image Container */}
+                        <div className="relative h-80 overflow-hidden">
+                          <Image
+                            src={member.image || "/placeholder.svg"}
+                            alt={member.name}
+                            fill
+                            className=" object-contain group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                          {/* Name and Designation Overlay */}
+                          <div className="absolute bottom-4 left-4 right-4 text-white">
+                            <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
                           </div>
                         </div>
 

@@ -16,6 +16,7 @@ interface WideImageScrollerProps {
 
 export default function WideImageScroller({
   images = [
+    "/logo.svg",
     "https://res.cloudinary.com/dk6m1qejk/image/upload/v1754321873/WhatsApp_Image_2025-08-02_at_9.32.14_PM_gbqyqo.jpg",
     "https://res.cloudinary.com/dk6m1qejk/image/upload/v1754321873/WhatsApp_Image_2025-08-02_at_9.24.21_PM_hmbeid.jpg",
     "https://res.cloudinary.com/dk6m1qejk/image/upload/v1754321873/IMG-20180422-WA0114_wjpsrh.jpg",

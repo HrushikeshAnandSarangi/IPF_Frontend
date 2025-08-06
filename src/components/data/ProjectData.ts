@@ -86,7 +86,7 @@ export const projectsData: Project[] = [
   },
   {
     id: "9",
-    title: "Charitable Services",
+    title: "Humanitarian Services",
     description:
       "Charity is a heartfelt initiative that brings together people of all faiths to serve those in need. We organize charitable programs during major festivals of various religions—such as Diwali, Eid, Christmas, Gurpurab, and others—to collect and distribute food, clothes, and daily essentials to the underprivileged. By holding these drives at temples, mosques, churches, and gurudwaras, we create a spirit of shared service and unity. These events not only provide material support but also promote interfaith harmony and compassion. Through this effort, we celebrate the true essence of all faiths—kindness, generosity, and humanity.",
     hasImage: false,

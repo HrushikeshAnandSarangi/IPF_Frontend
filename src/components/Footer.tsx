@@ -22,7 +22,7 @@ export default function Footer() {
 
   const contactInfo = [
     { icon: Mail, text: "info@indianpluralismfoundation.org", href: "mailto:info@indianpluralismfoundation.org" },
-    { icon: MapPin, text: "New Delhi, India", href: "#location" },
+    { icon: MapPin, text: "Kolkata, India", href: "#location" },
   ]
 
   // Google Translate functionality
