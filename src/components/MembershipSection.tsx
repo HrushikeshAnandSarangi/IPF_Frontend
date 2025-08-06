@@ -55,7 +55,7 @@ export default function MembershipPage({ className = "" }: MembershipPageProps) 
     setError("")
 
     try {
-      const response = await fetch("http://localhost:5000/membership", {
+      const response = await fetch("https://ipf-backend.onrender.com/membership", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
