@@ -47,7 +47,7 @@ export default function ContributePage({ className = "" }: ContributePageProps) 
     setError("")
 
     try {
-      const response = await fetch("https://ipf-backend.onrender.com/contribute", {
+      const response = await fetch("https://ipf-backend-6kxv.onrender.com/contribute", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
