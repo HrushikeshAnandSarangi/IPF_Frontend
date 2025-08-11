@@ -11,6 +11,10 @@ export interface InternationalMember {
   intro: string
   image: string
 }
+export interface AdvisoryMember {
+  id: string
+  name: string
+}
 
 export interface TeamMember {
   id: string
@@ -28,10 +32,10 @@ export const coreTeamData: CoreTeamMember[] = [
   },
   {
     id: "2",
-    name: "Fatma Aslam",
+    name: "Fathma Aslam",
     designation: "President",
     intro:
-      "Fatima Aslam is the President and founding force behind the Indian Pluralism Foundation, a dynamic organization committed to promoting interfaith harmony and cultural understanding in Kolkata. Her vision and tireless efforts have been instrumental in shaping the Foundation’s growth and impact. As an entrepreneur and mother, Fatima balances her family life with an extraordinary commitment to social change, embodying grace, resilience, and leadership in every sphere. She is deeply respected for her quiet strength and ability to bring people together across divides. Fatima is also the author of the heartfelt book Little Fatima, a reflection of her values, experiences, and hope for a more compassionate world. Her story is one of dedication, not only to her family but to a larger mission of unity and peace. A deeply inspiring mother and changemaker, Fatima Aslam stands as a beacon of strength and empathy, showing that powerful leadership often begins in everyday life.",
+      "Fathma Aslam is the President and founding force behind the Indian Pluralism Foundation, a dynamic organization committed to promoting interfaith harmony and cultural understanding in Kolkata. Her vision and tireless efforts have been instrumental in shaping the Foundation’s growth and impact. As an entrepreneur and mother, Fatima balances her family life with an extraordinary commitment to social change, embodying grace, resilience, and leadership in every sphere. She is deeply respected for her quiet strength and ability to bring people together across divides. Fatima is also the author of the heartfelt book Little Fatima, a reflection of her values, experiences, and hope for a more compassionate world. Her story is one of dedication, not only to her family but to a larger mission of unity and peace. A deeply inspiring mother and changemaker, Fatima Aslam stands as a beacon of strength and empathy, showing that powerful leadership often begins in everyday life.",
     image: "/core/President.jpg",
   },
   {
@@ -77,20 +81,18 @@ export const executiveMembers: TeamMember[] = [
   { id: "6", name: "Dipankar Basu" },
   { id: "7", name: "Divakar Chaitanya Maharaj" },
   { id: "8", name: "Abdul Aziz" },
-  { id: "9", name: "Tangra" },
-  { id: "10", name: "Fawad Halim" },
-  { id: "11", name: "Imam Nabeel Kausar" },
+  { id: "9", name: "Imam Nabeel Kausar" },
 ]
 
-export const advisoryBoard: TeamMember[] = [
+export const advisoryBoard: AdvisoryMember[] = [
   { id: "1", name: "O.P Shah " },
-  { id: "2", name: "Jamil Sagar" },
-  { id: "3", name: "Margaret Foster" },
+  { id: "2", name: "Jamil Sagar"},
+  { id: "3", name: "Margaret Foster"},
   { id: "4", name: "Madhumita" },
-  { id: "5", name: "Urmi Chanda" },
-  { id: "6", name: "Mrinalini Martin" },
-  { id: "7", name: "Dr. Rev. Sunil Caleb" },
-  { id: "8", name: "Sankhadeep Shome" },
+  { id: "5", name: "Urmi Chanda"},
+  { id: "6", name: "Mrinalini Martin"},
+  { id: "7", name: "Dr. Rev. Sunil Caleb"}, 
+  { id: "8", name: "Sankhadeep Shome"},
   {id:"9",name:"Rev. Suresh Mohanty "},
   {id:"10",name:"Dr. N. Saha "},
   {id:"11",name:"Zeba Ahmed"},
@@ -119,5 +121,11 @@ export const internationalBoard:InternationalMember[]=[
     name:"Mr. Mohammad Ayatulla Rahaman ",
     intro:"Mr. Mohammad Ayatulla Rahaman is a founder and National Director of Nepal Unites, a part of Global Unites and running in 14 countries as a youth movement. He has been engaged in the Nepal Red Cross Society (NRCS) from a young age. He became a Lifetime Membership in the age of 16 and inspired with the Red Cross Principles and works then also became Distinguished Membership of NRCS in the age of 19. He has had 16 years’ experience of leadership, as a facilitator and mobilizer. He facilitates as a Master Trainer of Trainers on Youth Peer Education and on the issues of gender, women discrimination, Human Rights, peace, and responsible citizenship. He has good experience in national and international programs with the youth. He likes to work with the youth. He always believes that youth are innovative and have new ideas, concepts, courage, skills, and high energy to bring about needed changes. That is why he says, the Youth Can! He feels free and enjoy during working time with the youths. As to his formal college degree, he has completed the Bachelor degree majoring subject English Literature in the education faculty of Tribhuvan University. He has also completed a Master’s degree in Sociology from the same University. He had worked as a journalist in the national newspaper, online digital media, and television here in Nepal. He likes to work and integrate with people in the community, listen to their voices, and realize his advocacy for them. He wants to write and make their story known to the public. He also writes articles on local and social issues. He likes to travel. Trekking is his best hobby. He always focuses on self-commitment and self-implement. Always have a smile, for a smile brings positive vibes. Share a smile with everyone and make people happy. ",
     image:"/international/i10l_4.jpg",
+  },
+  {
+    id:"5",
+    name:"Am Glory Uke Kehinde ",
+    intro:"Am Glory Uke Kehinde, a Computer Science graduate, possesses a broad range of experience as a data analyst. Glory's diverse skill set also includes mixology, accompanied by a dynamic and optimistic outlook. Her outstanding qualities and commitment to children's welfare led her to pursue this path. Glory has exhibited a natural talent for children's development and protection.Am a peace builder and a Advocate for the GirlChild Glory currently holds the position of Communication and Policy Officer at Child Shield Initiative. ",
+    image:"/international/i10l_5.jpg",
   },
 ]

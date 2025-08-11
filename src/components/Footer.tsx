@@ -1,5 +1,5 @@
 "use client"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Globe } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Globe, Youtube } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
@@ -14,15 +14,14 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: "#facebook", label: "Facebook" },
-    { icon: Twitter, href: "#twitter", label: "Twitter" },
-    { icon: Instagram, href: "#instagram", label: "Instagram" },
-    { icon: Linkedin, href: "#linkedin", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com/share/1Ewgv55q1P/", label: "Facebook" },
+    { icon: Youtube, href: "https://youtube.com/@indianpluralismfoundation?si=U7EJ6Vj8s9sB-_lN", label: "Youtube" },
+    { icon: Instagram, href: "https://www.instagram.com/indian_pluralism_foundation?igsh=MTVpMzJsYzNvYWJiMw==", label: "Instagram" },
   ]
 
   const contactInfo = [
-    { icon: Mail, text: "info@indianpluralismfoundation.org", href: "mailto:info@indianpluralismfoundation.org" },
-    { icon: MapPin, text: "Kolkata, India", href: "#location" },
+    { icon: Mail, text: "indianpluralism@gmail.com", href: "mailto:indianpluralism@gmail.com" },
+    { icon: MapPin, text: "47A, Shakespeare Sarani. Kundalia Tower. Kolkata 700017. West Bengal. India.", href: "https://maps.app.goo.gl/jC36iVESLXVFe5528" },
   ]
 
   // Google Translate functionality

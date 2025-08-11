@@ -7,6 +7,7 @@ export interface Project {
   hasImage: boolean
   category: "interfaith" | "community" | "health" | "education" | "environment"
   link?: string
+  redirectLink?:string
 }
 
 export const projectsData: Project[] = [
@@ -16,9 +17,10 @@ export const projectsData: Project[] = [
     sdg: "SDGs 16: Peace Justice & Strong Institution",
     description:
       "Interfaith Youth Leadership Programmes are designed to educate and empower young individuals by fostering understanding and respect among diverse religious communities. The core aim of this initiative is to nurture a generation of youth who are not only aware of the different faiths that shape our society—such as Hinduism, Islam, Christianity, Sikhism, Buddhism, Jainism, and others—but are also capable of leading conversations that challenge prejudice and promote unity. Through interactive workshops, school visits, and experiential learning sessions, the programme introduces participants to the beliefs, practices, and values of various religions. This engagement helps break down stereotypes and builds empathy, encouraging youth to move beyond narrow identities and see the world through a lens of inclusion and mutual respect. The leadership aspect of the programme equips participants with the skills to become ambassadors of peace and understanding in their communities. They learn to communicate effectively, lead interfaith discussions, and inspire others to embrace diversity. By creating safe spaces for dialogue and shared learning, the programme lays the foundation for a more cohesive and compassionate society. In a world often divided by misunderstanding and fear, this initiative offers hope—cultivating leaders who can bridge divides and help others excel through cooperation and shared humanity.",
-    image: "/interfaithyouth/P_2.jpeg",
+    image: "/interfaithyouth/P_2.JPG",
     hasImage: true,
     category: "interfaith",
+    redirectLink:"/projects/1",
   },
   {
     id: "2",
@@ -29,6 +31,7 @@ export const projectsData: Project[] = [
     image: "/twinning/P_2.jpeg",
     hasImage: true,
     category: "interfaith",
+    redirectLink:"/projects/2",
   },
   {
     id: "3",
@@ -36,8 +39,10 @@ export const projectsData: Project[] = [
     sdg: "SDGs 16: Peace Justice & Strong Institution",
     description:
       "Youth Interfaith Essay Contest is an engaging initiative aimed at promoting interfaith understanding and dialogue among students. We visit various schools, colleges, and educational institutions to organize essay competitions on themes related to religious harmony, unity in diversity, and peaceful coexistence. These contests encourage young minds to think critically, express their ideas creatively, and reflect on the importance of interfaith respect in today's world. Winning students are recognized and awarded with prizes to celebrate their insight and effort. Through this platform, we inspire youth to become thoughtful ambassadors of peace, empathy, and inclusiveness in their communities and beyond.",
-    hasImage: false,
+    hasImage: true,
+    image:"/youthessay/P_1.jpg",
     category: "education",
+    redirectLink:"/projects/3",
   },
   {
     id: "4",
@@ -48,6 +53,7 @@ export const projectsData: Project[] = [
     image: "/buildingbridges/P_2.jpeg",
     hasImage: true,
     category: "interfaith",
+    redirectLink:"/projects/4",
   },
   {
     id: "5",
@@ -55,8 +61,10 @@ export const projectsData: Project[] = [
     sdg: "SDGs 6: Clean Water and Sanitation",
     description:
       "Cleanliness Drive is a community-focused initiative that actively contributes to the United Nations Sustainable Development Goal 6: Clean Water and Sanitation. This project emphasizes the importance of cleanliness, hygiene, and environmental responsibility in building healthier communities. As part of the drive, we visit various houses of worship—including temples, mosques, churches, and gurudwaras—and collaborate with volunteers to clean and maintain these sacred spaces, promoting respect for shared community environments. In addition to the cleaning efforts, we also conduct health and hygiene camps for underprivileged children. These camps focus on educating them about personal hygiene practices, the importance of sanitation, handwashing, and disease prevention. Interactive workshops, demonstrations, and distribution of hygiene kits help reinforce these lessons and empower children to lead healthier lives. By combining environmental care with community health education, the Cleanliness Drive not only fosters cleaner surroundings but also instills lifelong values of responsibility, dignity, and collective well-being.",
-    hasImage: false,
+    hasImage: true,
+    image:"/cleanliness/P_1.jpg",
     category: "environment",
+    redirectLink:"/projects/5",
   },
   {
     id: "6",
@@ -66,7 +74,8 @@ export const projectsData: Project[] = [
     image: "/yoga/RajaRamMohan.png",
     hasImage: true,
     category: "education",
-    link:"https://drive.google.com/file/d/14ySmvznKuHQNrkkMdgfDP3tDbMAMBo--/view?usp=drive_link"
+    link:"https://drive.google.com/file/d/14ySmvznKuHQNrkkMdgfDP3tDbMAMBo--/view?usp=sharing",
+    redirectLink:"/projects/6",
   },
   {
     id: "7",
@@ -74,8 +83,10 @@ export const projectsData: Project[] = [
     sdg: "SDGs 3: Good Health and Well-being",
     description:
       "Interfaith Blood Donation Drive supports the United Nations Sustainable Development Goal 3: Good Health and Well-being. This initiative promotes universal access to healthcare by encouraging voluntary blood donation, a vital resource in saving lives. As part of the drive, we collaborate with various houses of worship—temples, mosques, churches, and gurudwaras—to host blood donation camps within their premises. These sacred spaces become symbols of unity, where individuals from diverse faiths come together for a shared humanitarian cause. The drive not only meets critical medical needs but also fosters interfaith harmony, showing how collective action can bridge communities and support public health.",
-    hasImage: false,
+    hasImage: true,
+    image:"/blooddonation/P_1.jpg",
     category: "health",
+    redirectLink:"/projects/7",
   },
   {
     id: "8",
@@ -85,13 +96,16 @@ export const projectsData: Project[] = [
     image: "/yoga/P_2.jpeg",
     hasImage: true,
     category: "health",
+    redirectLink:"/projects/8",
   },
   {
     id: "9",
     title: "Humanitarian Services",
     description:
       "Charity is a heartfelt initiative that brings together people of all faiths to serve those in need. We organize charitable programs during major festivals of various religions—such as Diwali, Eid, Christmas, Gurpurab, and others—to collect and distribute food, clothes, and daily essentials to the underprivileged. By holding these drives at temples, mosques, churches, and gurudwaras, we create a spirit of shared service and unity. These events not only provide material support but also promote interfaith harmony and compassion. Through this effort, we celebrate the true essence of all faiths—kindness, generosity, and humanity.",
-    hasImage: false,
+    hasImage: true,
+    image:"/humanitarian/P_1.jpg",
     category: "community",
+    redirectLink:"/projects/9",
   },
 ]

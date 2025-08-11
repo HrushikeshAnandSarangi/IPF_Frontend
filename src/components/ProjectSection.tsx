@@ -109,11 +109,17 @@ export default function ProjectsSection({ className = "" }: ProjectsSectionProps
                         )}
                           {project.link && (
                             <a href={project.link}>
-                            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 text-sm font-medium rounded-full mb-4">
+                            <Badge className="bg-green-500 text-white px-4 py-2 text-sm font-medium rounded-full mb-4">
                               Check it out!
                             </Badge></a>
                           )}
                       </div>
+                          {project.redirectLink && (
+                            <a href={project.redirectLink}>
+                            <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 text-xl font-light  mb-4 ">
+                              Explore
+                            </Badge></a>
+                          )}
                     </div>
                   </div>
                 ) : (

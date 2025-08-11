@@ -65,7 +65,7 @@ export default function OurTeamSection({ className = "" }: OurTeamSectionProps) 
            <button
                 onClick={() => setActiveTab("international")}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeTab === "advisory"
+                  activeTab === "international"
                     ? "bg-gradient-to-r from-orange-500 to-green-500 text-white shadow-md"
                     : "text-gray-600 hover:text-gray-800 hover:bg-gray-50"
                 }`}
