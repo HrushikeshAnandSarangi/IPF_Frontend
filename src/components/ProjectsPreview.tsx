@@ -16,7 +16,7 @@ export default function ProjectsPreview({ className = "" }: ProjectsPreviewProps
       id: "1",
       title: "Interfaith Youth Leadership",
       description: "Empowering young leaders to foster understanding across diverse religious communities",
-      image: "/interfaithyouth/P_1.jpeg",
+      image: "/interfaithyouth/P_1.jpg",
       icon: Users,
       category: "Interfaith",
       gradient: "from-orange-500 to-yellow-500",
