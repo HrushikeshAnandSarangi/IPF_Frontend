@@ -20,7 +20,7 @@ export default function Footer() {
   ]
 
   const contactInfo = [
-    { icon: Mail, text: "indianpluralism@gmail.com", href: "mailto:indianpluralism@gmail.com" },
+    { icon: Mail, text: "info@indianpluralism.org", href: "mailto:info@indianpluralism.org" },
     { icon: MapPin, text: "47A, Shakespeare Sarani. Kundalia Tower. Kolkata 700017. West Bengal. India.", href: "https://maps.app.goo.gl/jC36iVESLXVFe5528" },
   ]
 
