@@ -234,6 +234,10 @@ export default function MembershipPage({ className = "" }: MembershipPageProps) 
                     <option value="Judaism">Judaism</option>
                     <option value="Zoroastrianism">Zoroastrianism</option>
                     <option value="Bahá'í Faith">Bahá'í Faith</option>
+                    <option value="Taoism">Taoism</option>
+                    <option value="Confucianism">Confucianism</option>
+                    <option value="Shinto">Shinto</option>
+                    <option value="Samaritanism">Samaritanism</option>
                     <option value="Other">Other</option>
                     <option value="No Religion">No Religion</option>
                   </select>
@@ -381,7 +385,6 @@ export default function MembershipPage({ className = "" }: MembershipPageProps) 
                 <li>• Access to exclusive interfaith events and workshops</li>
                 <li>• Networking opportunities with community leaders</li>
                 <li>• Priority registration for programs and initiatives</li>
-                <li>• Monthly newsletter with updates and resources</li>
                 <li>• Opportunity to contribute to interfaith dialogue</li>
               </ul>
             </div>

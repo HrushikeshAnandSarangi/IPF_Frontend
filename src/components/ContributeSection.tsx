@@ -213,6 +213,10 @@ export default function ContributePage({ className = "" }: ContributePageProps) 
                     <option value="Judaism">Judaism</option>
                     <option value="Zoroastrianism">Zoroastrianism</option>
                     <option value="Bahá'í Faith">Bahá'í Faith</option>
+                    <option value="Taoism">Taoism</option>
+                    <option value="Confucianism">Confucianism</option>
+                    <option value="Shinto">Shinto</option>
+                    <option value="Samaritanism">Samaritanism</option>
                     <option value="Other">Other</option>
                     <option value="No Religion">No Religion</option>
                   </select>
